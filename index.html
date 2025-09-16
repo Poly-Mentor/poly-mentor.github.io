@@ -39,7 +39,6 @@
 		            <img class="profile-image img-fluid float-start rounded-circle" src="assets/images/profile-180px.jpg" alt="profile image" sizes=""/>
 		            <div class="profile-content">
 		                <h1 class="name">Filip Sosnowicz</h1>
-		                <h2 class="desc">Inżynier Technologii Chemicznej</h2>   
 		                <ul class="social list-inline">
 		                    <li class="list-inline-item"><a href="https://github.com/Poly-Mentor"><img src="https://icons.iconarchive.com/icons/iconoir-team/iconoir/16/github-icon.png" width="16" height="16"></a></li> 
                             <li class="list-inline-item"><a href="https://www.printables.com/pl/@Polymentor"><img src="https://icons.iconarchive.com/icons/simpleicons-team/simple/32/printables-icon.png" width="16" height="16"></a></li>                
@@ -66,17 +65,78 @@
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">O mnie</h2>
                         <div class="content">
-                            <p>Z wykształcenia jestem inżynierem technologii chemicznej i od początku kariery pracuję w branży produkcji polimerów. 
-                                Interesuję się elektroniką, programowaniem i drukiem 3D. Wykorzystując swoją wiedzę w tych dziedzinach tworzę różne projekty
+                            <p>Jestem inżynierem technologii chemicznej. Od ukończenia studiów pracuję w branży produkcji polimerów. 
+                                Interesuję się elektroniką, programowaniem i drukiem 3D. Uczę się administracji systemami na własnym homelabie gdzie zarządzam maszynami wirtualnymi i kontenerami (LXC i Docker). Niedawno zdecydowałem się zdobyć formalne wykształcenie w dziedzinie informatyki z którą mam wieloletnie, niekomercyjne doświadczenie. Wykorzystując swoją wiedzę w tych dziedzinach tworzę różne projekty
                                  - najciekawsze z nich przedstawiam poniżej.</p>
                          
                         </div><!--//content-->
                     </div><!--//section-inner-->                 
                 </section><!--//section-->
+
+                <section class="latest section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Trwające projekty</h2>
+                        <div class="content">    
+                                               
+                            <div class="item featured text-center">
+                                
+                                <div class="featured-image">
+                                    <a>
+                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/shopping_list.png" alt="Zdalnie sterowany pojazd gąsienicowy" />
+                                    </a>
+                                </div>
+                                
+                                <h3 class="title mb-3">Lista zakupów - backend w FastAPI</h3>
+                                    
+                                <div class="desc text-start">                                    
+                                    <p>W celu zaznajomienia się z frameworkiem FastAPI pracuję nad backendem prostej aplikacji do zarządzania listami zakupów.
+                                    <div class="project-image">
+                                        <a>
+                                            <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/shopping_list_schemas.png">
+                                        </a>
+                                    </div>
+                                    
+                                    <ul>
+                                        Założenia projektu:
+                                        <li>REST API</li>
+                                        <li>SQLModel ORM</li>
+                                        <li>JWT authentication</li>
+                                        <li>uprawnienia do współdzielenia list pomiędzy użytkownikami</li>
+                                    </ul>
+                                    Po zakończeniu pracy nad pierwszą wersją zamierzam skonteneryzować ją w Dockerze i przygotować do deploymentu w chmurze.
+                                    <br> Kolejnym krokiem będzie napisanie mojej pierwszej aplikacji Android.
+                                    <p class="mb-2"><a href="https://github.com/Poly-Mentor/shopping-list-backend/tree/dev" target="_blank"><i class="fas fa-external-link-alt"></i> Projekt na Github</a></p>
+                                </div><!--//desc-->         
+                            
+                            <hr class="divider" />
+                            <div class="item row">
+                                <a class="col-md-4 col-12">
+                                <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/CYD.jpg" alt="project name" />
+                                </a>
+                                <div class="desc text-start">
+                                    <h3 class="title">Urządzenie do odczytu danych z czujników</h3>
+                                    <p class="mb-2">Projekt embedded urządzenia, które będzie mogło odczytywać dane z wielu różnych czujników wybieranych z menu. Platformę sprzętową stanowi mikrokontroler ESP32 z wyświetlaczem dotykowym.</p>
+                                    <p>
+                                        <ul>
+                                            Wykorzystane technologie:
+                                            <li>C++</li>
+                                            <li>PlatformIO</li>
+                                            <li>Arduino</li>
+                                            <li>FreeRTOS</li>
+                                        </ul>
+                                    </p>
+                                    <p class="mb-2"><a href="https://www.youtube.com/watch?v=ynt5WCn0BcI" target="_blank"><i class="fas fa-external-link-alt"></i> Zobacz na YouTube</a></p>
+                                    <p class="mb-2"><a href="https://forbot.pl/forum/topic/19105-tesla-kolejna-proba-budowy-linefollowera-po-latach/" target="_blank"><i class="fas fa-external-link-alt"></i>Opis projektu na Forbot.pl</a></p>
+                                </div><!--//desc-->                          
+                            </div><!--//item-->
+
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                
+                </section><!--//section-->
     
                <section class="latest section">
                     <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Moje ostatnie projekty</h2>
+                        <h2 class="heading">Moje poprzednie projekty</h2>
                         <div class="content">    
                                                
                             <div class="item featured text-center">
@@ -90,21 +150,9 @@
                                 <h3 class="title mb-3">Pojazd zdalnie sterowany</h3>
                                     
                                 <div class="desc text-start">                                    
-                                    <p>Zaprojektowałem w Fusion 360, a następnie wydrukowałem na drukarce 3D pojazd zdalnie sterowany. Porusza się on na paskach zębatych wydrukowanych z elastycznego termoplastycznego poliuretanu. Pojazd łączy się z siecią WiFi i udostępnia stronę internetową, na której widać podgląd z kamery i z której można nim sterować. Działa on wykorzystując mikrokomputer Raspberry Pi i samodzielnie zaprojektowaną i dedykowaną płytkę drukowaną.</p>
+                                    <p>Zaprojektowałem w Fusion 360, a następnie wydrukowałem na drukarce 3D pojazd zdalnie sterowany. Porusza się on na paskach zębatych wydrukowanych z elastycznego termoplastycznego poliuretanu. Pojazd łączy się z siecią WiFi i udostępnia stronę internetową, na której widać podgląd z kamery i z której można nim sterować. Komunikacja między interfejsem webowym a pojazdem odbywa się przy pomocy Web Sockets, a oprogramowanie pojazdu napisane jest w Pythonie. Działa ono na mikrokomputerze Raspberry Pi i samodzielnie zaprojektowanym układzie elektronicznym zapewniającym zasilanie i sterowanie silnikami.</p>
                                     <p class="mb-2"><a href="https://forbot.pl/forum/topic/23115-pojazd-gasienicowy-wydrukowany-w-3d-zdalnie-sterowany-przez-wifi/" target="_blank"><i class="fas fa-external-link-alt"></i>Opis projektu na Forbot.pl</a></p>
                                 </div><!--//desc-->         
-            
-                            </div><!--//item-->
-                            <hr class="divider" />
-                            <div class="item row">
-                                <a class="col-md-4 col-12">
-                                <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/Stroboscope.png" alt="Stroboskop render projektu" />
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title">Stroboskop</h3>
-                                    <p class="mb-2">Podczas wizyty w Centrum Nauki Kopernik bardzo spodobał mi się eksponat prezentujący efekt stroboskopowy. Było to śmigło przymocowane do silnika i oświetlenie LED z pokrętłem do regulacji częstotliwości błysków. Postanowiłem go odtworzyć w trochę mniejszej skali przy użyciu Arduino i części wydrukowanych na drukarce 3D.</p>
-                                </div><!--//desc-->                          
-                            </div><!--//item-->
                             
                             <hr class="divider" />
                             <div class="item row">
@@ -119,62 +167,6 @@
                                 </div><!--//desc-->                          
                             </div><!--//item-->
 
-                            <hr class="divider" />
-                            <div class="item row">
-                                <a class="col-md-4 col-12">
-                                <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/Stirling.png" alt="project name" />
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title">Model silnika Stirlinga</h3>
-                                    <p class="mb-2">Silnik Stirlinga pobiera ciepło z zewnętrznego źródła aby wykonywać pracę mechaniczną. Jako tłoki i cylindry posłużyły szklane strzykawki wsparte na metalowych uchwytach. Reszta konstrukcji, nienarażona na wysokie temperatury, została wydrukowana w 3D.</p>
-                                </div><!--//desc-->                          
-                            </div><!--//item-->
-                            
-                            <hr class="divider" />
-                            <div class="item row">
-                                <a class="col-md-4 col-12">
-                                <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/air_filter.png" alt="project name" />
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title">Oczyszczacz powietrza</h3>
-                                    <p class="mb-2">
-                                        Projekt praktyczny - inżynierskie rozwiązanie problemu pylenia żwirku bentonitowego stosowanego w... kociej kuwecie.
-                                    </p>
-                                    <p class="mb-2">Pierwszym etapem było pozyskanie najważniejszych komponentów - wentylatora oraz filtra. Wentylator pozyskany został z części starej drukarki laserowej. Doboru wkładu filtracyjnego dokonałem analizując kryteria rynkowe (cena i dostępność) i techniczne (wymiary). <br>
-                                        Kryterium niskiej ceny i łatwej dostępności skierowało mnie do wyboru spośród filtrów dla branży automotive, gdzie wysoka konkurencja na rynku części zamiennych, szczególnie tak prostych jak filtry, pozwala uzyskać niską cenę. <br>
-                                        Kryterium techniczne dotyczące wymiarów związane było z założeniem projektowym - obudowa miała być wydrukowana na drukarce 3D i jej wymiary miały być ograniczone do wielkości stołu roboczego drukarki, aby uniknąć niepotrzebnego dzielenia komponentów obudowy. Wynikiem poszukiwań był produkt Filtron AP-040
-                                        (dedykowany do starszych modeli Fiata Pandy czy Uno) o wymiarach 175x90x45.
-                                    </p>
-
-                                    <p class="mb-2">
-                                        Początkowa koncepcja zakładała załączanie wentylatora przy pomocy czujnika ruchu - żwir pyli się przy jego przesypywaniu, więc jakakolwiek aktywność wewnątrz kuwety miała wzbudzać układ do pracy przez 2 minuty, aż pył opadnie. Okazało się jednak, że hałas wentylatora płoszy zwierzę,
-                                        więc czujnik ruchu został zastąpiony przyciskiem i timerem (opartym na popularnym układzie scalonym NE555). W finalnej wersji urządzenie załączane jest przez człowieka przed rozpoczęciem czyszczenia kuwety, a powstający na skutek przesiewania żwiru pył jest odciągany z powietrzem przez filtr poza obudowę.
-                                    </p>
-                                </div><!--//desc-->                          
-                            </div><!--//item-->
-                            
-                            <hr class="divider" />
-                             <div class="item row">
-                                <a class="col-md-4 col-12">
-                                <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/pinch_valve.png" alt="project name" />
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title">Zawór zaciskowy</h3>
-                                    <p class="mb-2">W niektórych projektach pracuje się z cieczami, na przykład budując układ nawadniania roślin, albo filtr do akwarium. Zdarzają się jednak przypadki, gdzie ważne jest odseparowanie cieczy od elementów urządzenia ze względu na jej agresywny lub brudzący charakter,
-                                        albo wymagania sanitarne (napoje). 
-                                    </p>
-                                    <p class="mb-2">Do przetłaczania takich cieczy stosuje się pompy perystaltyczne. Rolki pompy "przeciskają" ciecz przez silikonowy wężyk, dzięki czemu płyn nie styka się z elementami pompy. 
-                                    </p>
-                                    <p class="mb-2">
-                                        Co jednak, gdy nie chcemy korzystać z pompy, a zależy nam na regulacji przepływu, na przykład przy grawitacyjnym
-                                        przelewaniu cieczy? 
-                                    </p>
-                                    <p class="mb-2">
-                                        Dla takich sytuacji zaprojektowałem zawór, który może w kontrolowany sposób regulować przepływ cieczy przez wężyk poprzez jego ściskanie. Projekt jest niemal w całości drukowany 3D, jako napęd wykorzystuje popularne, tanie serwo modelarskie.
-                                    </p>
-                                </div><!--//desc-->                          
-                            </div><!--//item-->
-                            
                         </div><!--//content-->  
                     </div><!--//section-inner-->                
                 </section><!--//section-->
@@ -214,52 +206,20 @@
                         <h2 class="heading">Umiejętności</h2>
                         <div class="content">
                             <div class="skillset">
-                            
-                                <div class="item">
-                                    <h3 class="level-title">Druk 3D FDM</h3>
-                                    <h3 class="level-title"><span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Przygotowanie modeli do druku, obsługa drukarki, rozwiązywanie problemów"><i class="fas fa-info-circle"></i>Ekspert</span></h3><br>
-                                    <div class="level-bar progress">
-									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 96%" aria-valuenow="96"  aria-valuemin="0" aria-valuemax="96"></div>
-									</div><!--//level-bar-->                                 
-                                </div><!--//item-->
 
                                 <div class="item">
-                                    <h3 class="level-title">Fusion 360</h3>
-                                    <h3 class="level-title"><span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Projektowanie modeli zoptymalizowanych do druku przestrzennego"><i class="fas fa-info-circle"></i>Zaawansowany</span></h3><br>
-                                    <div class="level-bar progress">
-                                        <div class="progress-bar level-bar-inner" role="progressbar" style="width: 86%" aria-valuenow="86"  aria-valuemin="0" aria-valuemax="96"></div>
-									</div><!--//level-bar-->                                  
-                                </div><!--//item-->
-
-                                <div class="item">
-                                    <h3 class="level-title">Microsoft Excel</h3>
-                                    <h3 class="level-title"><span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Tabele przestawne, makra, Power Pivot"><i class="fas fa-info-circle"></i>Zaawansowany</span></h3><br>
-                                    <div class="level-bar progress">
-                                        <div class="progress-bar level-bar-inner" role="progressbar" style="width: 86%" aria-valuenow="86"  aria-valuemin="0" aria-valuemax="96"></div>
-									</div><!--//level-bar-->                                  
-                                </div><!--//item-->
-                                
-                                <div class="item">
-                                    <h3 class="level-title">Python &amp; Pandas</h3>
-                                    <h3 class="level-title"><span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Programowanie obiektowe, analiza danych w pakiecie Pandas, korzystanie z dokumentacji"><i class="fas fa-info-circle"></i>Średniozaawansowany</span></h3><br>
+                                    <h3 class="level-title">Python</h3>
+                                    <h3 class="level-title"><span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Flask, FastAPI, Micropython"><i class="fas fa-info-circle"></i>Średniozaawansowany</span></h3><br>
                                     <div class="level-bar progress">
 									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 70%" aria-valuenow="70"  aria-valuemin="0" aria-valuemax="96"></div>
 									</div><!--//level-bar-->                                  
                                 </div><!--//item-->
 
                                 <div class="item">
-                                    <h3 class="level-title">Elektronika</h3>
-                                    <h3 class="level-title"><span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Projektowanie układów elektronicznych i płytek PCB"><i class="fas fa-info-circle"></i>Średniozaawansowany</span></h3><br>
+                                    <h3 class="level-title">C++</h3>
+                                    <h3 class="level-title"><span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Programowanie obiektowe, embedded, FreeRTOS"><i class="fas fa-info-circle"></i>Średniozaawansowany</span></h3><br>
                                     <div class="level-bar progress">
-									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 70%" aria-valuenow="70"  aria-valuemin="0" aria-valuemax="96"></div>
-									</div><!--//level-bar-->                                  
-                                </div><!--//item-->
-
-                                <div class="item">
-                                    <h3 class="level-title">Visual Studio Code</h3>
-                                    <h3 class="level-title"><span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Pisanie kodu, debugowanie"><i class="fas fa-info-circle"></i>Podstawowy</span></h3><br>
-                                    <div class="level-bar progress">
-									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 30%" aria-valuenow="30"  aria-valuemin="0" aria-valuemax="96"></div>
+									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 50%" aria-valuenow="70"  aria-valuemin="0" aria-valuemax="96"></div>
 									</div><!--//level-bar-->                                  
                                 </div><!--//item-->
 
@@ -270,10 +230,10 @@
 									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 30%" aria-valuenow="30"  aria-valuemin="0" aria-valuemax="96"></div>
 									</div><!--//level-bar-->                                  
                                 </div><!--//item-->
-                                
+
                                 <div class="item">
-                                    <h3 class="level-title">Linux</h3>
-                                    <h3 class="level-title"><span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Proste skrypty, tworzenie usług"><i class="fas fa-info-circle"></i>Podstawowy</span></h3><br>
+                                    <h3 class="level-title">Docker</h3>
+                                    <h3 class="level-title"><span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Konteneryzacja prostych aplikacji Python"><i class="fas fa-info-circle"></i>Podstawowy</span></h3><br>
                                     <div class="level-bar progress">
 									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 30%" aria-valuenow="30"  aria-valuemin="0" aria-valuemax="96"></div>
 									</div><!--//level-bar-->                                  
@@ -288,13 +248,29 @@
                                 </div><!--//item-->
 
                                 <div class="item">
-                                    <h3 class="level-title">Docker</h3>
-                                    <h3 class="level-title"><span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Konteneryzacja prostych aplikacji Python"><i class="fas fa-info-circle"></i>Podstawowy</span></h3><br>
+                                    <h3 class="level-title">Visual Studio Code</h3>
+                                    <h3 class="level-title"><span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Pisanie kodu, debugowanie"><i class="fas fa-info-circle"></i>Podstawowy</span></h3><br>
                                     <div class="level-bar progress">
 									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 30%" aria-valuenow="30"  aria-valuemin="0" aria-valuemax="96"></div>
 									</div><!--//level-bar-->                                  
                                 </div><!--//item-->
-                                
+
+                                <div class="item">
+                                    <h3 class="level-title">Linux</h3>
+                                    <h3 class="level-title"><span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Proste skrypty, tworzenie usług"><i class="fas fa-info-circle"></i>Podstawowy</span></h3><br>
+                                    <div class="level-bar progress">
+									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 30%" aria-valuenow="30"  aria-valuemin="0" aria-valuemax="96"></div>
+									</div><!--//level-bar-->                                  
+                                </div><!--//item-->
+                        
+                                <div class="item">
+                                    <h3 class="level-title">Microsoft Excel</h3>
+                                    <h3 class="level-title"><span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Tabele przestawne, makra, Power Pivot"><i class="fas fa-info-circle"></i>Zaawansowany</span></h3><br>
+                                    <div class="level-bar progress">
+                                        <div class="progress-bar level-bar-inner" role="progressbar" style="width: 86%" aria-valuenow="86"  aria-valuemin="0" aria-valuemax="96"></div>
+									</div><!--//level-bar-->                                  
+                                </div><!--//item-->
+                               
                                 <p><a class="more-link" href="https://github.com/Poly-Mentor"><i class="fas fa-external-link-alt"></i>Moje projekty programistyczne na GitHub</a></p> 
                                 <p><a class="more-link" href="https://www.printables.com/pl/@Polymentor"><i class="fas fa-external-link-alt"></i>Moje modele na Printables</a></p> 
                             </div>              
@@ -306,6 +282,10 @@
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Edukacja</h2>
                         <div class="content">
+                            <div class="item">                      
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i>Studia inżynierskie: Informatyka</h3>
+                                <h4 class="university">Państwowa Akademia Nauk Stosowanych we Włocławku<span class="year">(2024-obecnie)</span></h4>
+                            </div><!--//item-->
                             <div class="item">                      
                                 <h3 class="title"><i class="fas fa-graduation-cap"></i>Studia podyplomowe: Bezpieczeństwo procesów przemysłowych</h3>
                                 <h4 class="university">Politechnika Łódzka <span class="year">(2020-2021)</span></h4>
